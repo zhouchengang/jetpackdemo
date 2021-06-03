@@ -33,4 +33,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_demo_one" />
 
+
+    <TextView
+        android:id="@+id/tv_demo_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#DDDDDD"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="DEMO THREE"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_demo_two" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@ class DemoOneActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_demo_one)
 
-        demoOneViewModel = DemoOneViewModel()
+        demoOneViewModel = ViewModelProvider(this).get(DemoOneViewModel::class.java)
 
         demoOneViewModel.text.observe(this) {
             tv.text = it.toString()

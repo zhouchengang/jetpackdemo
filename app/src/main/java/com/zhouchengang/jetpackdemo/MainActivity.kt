@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             startActivity(Intent(this, DemoTwoActivity::class.java))
         }
 
+        tv_demo_three.setOnClickListener {
+            startActivity(Intent(this, DemoThreeActivity::class.java))
+        }
+
     }
 }
