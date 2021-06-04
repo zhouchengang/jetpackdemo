@@ -14,10 +14,10 @@ class DemoThreeActivity : AppCompatActivity() {
         demoThreeViewModel = ViewModelProvider(this).get(DemoThreeViewModel::class.java)
 
         tv_content.setOnClickListener {
-            demoThreeViewModel.tvContent.value = (demoThreeViewModel.tvContent.value ?: 0 )+ 1
+            demoThreeViewModel.tvContent?.value = (demoThreeViewModel.tvContent?.value ?: 0) + 1
         }
 
-        demoThreeViewModel.tvContent.observe(this) {
+        demoThreeViewModel.tvContent?.observe(this) {
             tv_content.text = it.toString()
         }
 
